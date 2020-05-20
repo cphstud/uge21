@@ -1,6 +1,5 @@
 package Second;
 
-import java.io.ObjectOutputStream;
 import java.time.Period;
 
 public class Bog implements Comparable<Bog>{
@@ -9,20 +8,11 @@ public class Bog implements Comparable<Bog>{
     String titel;
     int year;
     int numofPages;
-    Loan loan;
 
     public Bog(String isbn, String titel, int year) {
         this.isbn = isbn;
         this.titel = titel;
         this.year = year;
-    }
-
-    public Loan getLoan() {
-        return loan;
-    }
-
-    public void setLoan(Loan loan) {
-        this.loan = loan;
     }
 
     public void setNumofPages(int numofPages) {
